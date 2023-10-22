@@ -1,0 +1,46 @@
+//PAGINA ACERCA DE NOSOTROS
+.boxAcercaNosBig h3 {
+  padding-top: 5px;
+  font-size: 30px;
+  font-family: $familytitle;
+  text-align: center;
+  color: $colorprin;
+  text-shadow: 3px 3px 2px black;
+}
+
+.boxAcercaNos {
+  @include dflex(column, nowrap, unset, center);
+  background-image: linear-gradient(to top right ,  $colorsecu, #25A8F8, #25F8E8,#25F8AB,#253FF8 , $colorprin, );
+  background-size: 700% 700%;
+  animation: color 3s ease-in-out infinite;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+.ubicaciones {
+  margin-top: 5px;
+  width: 100%;
+  margin-bottom: 0;
+  @include dflex(row, nowrap, space-around, start);
+}
+
+.infoNosotros {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.boxAcercaNos img {
+  height: 24px;
+}

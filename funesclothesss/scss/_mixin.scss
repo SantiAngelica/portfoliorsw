@@ -1,0 +1,46 @@
+@mixin dflex($flexdir, $flexwr, $justcont, $aliitm) {
+    display: flex;
+    flex-direction: $flexdir;
+    flex-wrap: $flexwr;
+    justify-content: $justcont;
+    align-items: $aliitm;
+}
+
+@mixin dgrid($sentido, $cant) {
+    display: grid;
+    @if($sentido ==column) {
+        @if($cant ==1) {
+            grid-template-columns: 1fr;
+        }
+
+        @if($cant ==2) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @if($cant ==3) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @if($cant ==4) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    @if($sentido ==row) {
+        @if($cant ==1) {
+            grid-template-rows: 1fr;
+        }
+
+        @if($cant ==2) {
+            grid-template-rows: 1fr 1fr;
+        }
+
+        @if($cant ==3) {
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        @if($cant ==4) {
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+    }
+}

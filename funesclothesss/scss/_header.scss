@@ -1,0 +1,19 @@
+//HEADER
+h1 {
+    color: $colorprin;
+    font-family: $familytitle;
+    text-align: center;
+    text-shadow: 8px 8px 8px black;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.navbar {
+    background-color: $colorsecu;
+    border-radius: 10px;
+}
+
+.active {
+    background-color: rgba(95, 158, 160, 0.37);
+    border-radius: 10px;
+}

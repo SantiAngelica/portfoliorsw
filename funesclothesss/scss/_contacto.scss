@@ -1,0 +1,84 @@
+//PAGINA DE CONTACTO
+h2 {
+  @include dflex(row, nowrap, center, start);
+  font-family: $familytitle;
+  color: $colorprin;
+  font-size: 300%;
+  text-shadow: 5px 5px 4px black;
+}
+
+main form {
+  @include dflex(column, nowrap, start, center);
+  height: fit-content;
+  width: 90%;
+  background-image: linear-gradient(to top right , $colorsecu, #25A8F8, #25F8E8,#25F8AB,#253FF8 , $colorprin, );
+  background-size: 700% 700%;
+  animation: color 3s ease-in-out infinite;
+  border-radius: 15px;
+  div {
+    margin: 2%;
+  }
+
+  h2 {
+    font-size: 200%;
+  }
+}
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+.boxForm {
+  @include dflex(column, nowrap, start, center);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 100%;
+  width: 100%;
+
+  input {
+    height: 30px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+  }
+
+  label {
+    font-family: $familytitle;
+    font-size: 30px;
+    color: $colorprin;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black
+  }
+}
+
+.boxFormInd {
+  @include dflex(column, nowrap, start, center);
+  width: 100%;
+  margin: 0;
+}
+
+.inputasoc {
+  width: 80%;
+  &:focus{
+    background-color: white;
+    height: 50px;
+  }
+}
+
+.botonEnviar {
+  @include dflex(row, nowrap, space-evenly, start);
+  width: 80%;
+  input{
+    &:hover{
+      transform: translateY(-5%);
+    }
+  }
+}

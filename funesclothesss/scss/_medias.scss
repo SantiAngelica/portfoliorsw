@@ -1,0 +1,122 @@
+/* VISTA PARA TABLETAS */
+@media (min-width: 400px) {
+    .carousel {
+        width: 350px;
+    }
+}
+
+@media (min-width: 576px) {
+    .ubicaciones {
+        width: 80%;
+    }
+
+    .boxForm label {
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    .boxGeneral {
+        @include dgrid(column, 2);
+    }
+}
+
+@media (min-width: 710px) {
+    .box-slider-index {
+        @include dgrid(column, 2);
+    }
+}
+
+@media (min-width: 768px) {
+    main form {
+        width: 688px;
+    }
+
+    .ubicaciones {
+        width: 50%;
+    }
+
+    .box-img-index {
+        margin-top: 30px;
+        @include dflex(0, 0, center, 0)
+    }
+
+    .box-img-index img {
+        display: inline;
+        height: 150px;
+    }
+
+    .carousel2 {
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 90px;
+    }
+
+    body {
+        background-image: url(fono.jpg);
+        background-size: cover;
+    }
+}
+
+/* VISTA PARA ESCRITORIO */
+@media (min-width: 992px) {
+    .boxForm label {
+        font-size: 45px;
+    }
+
+    .carousel {
+        width: 400px;
+    }
+
+    .box-img-index img {
+        display: inline;
+        height: 200px;
+    }
+
+    .boxGeneral {
+        @include dgrid(column, 3);
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        @include dflex(0, 0, space-evenly, 0);
+    }
+}
+
+@media (min-width: 1200px) {
+    .ubicaciones {
+        width: 40%;
+    }
+
+    .box-img-index img {
+        display: inline;
+        height: 250px;
+    }
+
+    .boxGeneral {
+        @include dgrid(column, 4);
+    }
+
+    .redes {
+        img {
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+        }
+    }
+
+}
