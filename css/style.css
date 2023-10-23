@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     margin: 20px 50px;
     padding-left: 50px;
-    border-bottom: 2px solid rgb(8, 46, 75);
+    border-bottom: 2px solid rgb(46, 134, 228);
 }
 
 .headerfirst {
@@ -99,7 +99,7 @@ header a {
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(46, 134, 228);
         transform: scaleX(0);
         transform-origin: bottom right;
         transition: transform 0.6s ease-out;
@@ -162,6 +162,7 @@ p {
 }
 
 h3 {
+    color:rgb(46, 134, 228);
     font-size: 1.5rem;
     margin-top: 7px;
 }
@@ -235,7 +236,7 @@ footer h5{
 }
 
 .redes img {
-    height: 30px;
+    height: 40px;
     margin-left: 3px;
     color: rgb(46, 134, 228);
 }
@@ -245,116 +246,34 @@ footer h5{
 }
 
 h5 {
+    display: flex;
+    align-items: center;
     font-size: 20px;
     font-weight: 500;
 }
-.perfil img{
-    height:24px;
-}
-.numeros{
-    display: flex;
-    flex-direction: column;
-    width: 700px;
-}
-.perfil{
-    margin-top:20px;
-    border-radius:80px;
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    border: 2px solid rgb(46, 134, 228);
-}
-.perfil a{
-    height: 24px;
-}
-.perfil h3{
-    width:fit-content
-}
-.wp a{
-    border: 2px solid rgb(46, 134, 228);
-    display: flex;
-    align-items: center;
-    width:fit-content;
-    color: rgb(46, 134, 228);
-    height:35px;
-    width:200px;
-    padding: 0px 5px;
-    border-radius:15px;
-    &:hover{
-        background: linear-gradient(to top right,  #25D366, #25D366, #075E54);
-    }
-}
-.ig, .wp{
-    width:200px;
-    margin-top:5px;
-    border-radius:15px;
-}
 
-.ig a{
-    border: 2px solid rgb(46, 134, 228);
-    display: flex;
-    align-items: center;
-    width:fit-content;
-    color: rgb(46, 134, 228);
-    height:35px;
-    width:200px;
-    padding: 0px 5px;
-    border-radius:15px;
-    &:hover{
-        background: linear-gradient(to right, #f9ce34,#f9ce34, #ee2a7b, #6228d7);
-    }
-}
 
-.mateo a{
-    display: flex;
-    justify-content: flex-end
-}
-.perfil p{
-    margin-left: 10px;
-    width:fit-content;
-}
-.mateo{
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-end;
-}
-.boxcont2{
-    display:flex;
-    flex-direction:column;
-    align-items:flex-end
-}
-.boxcont2 p{
-    margin-right: 10px;
-}
-.circulo{
-    height:150px;
-    width:150px;
-    border:2px solid red;
-    border-radius:50%;
-    margin: 20px;
-}
+
+
+
 
 /* CONTACTO */
 .contacto{
-    height: 500px;
     width: 700px;
     display:flex;
     align-items:center;
     justify-content:center;
+    margin-bottom: 40px;
 }
 .contenedor-inputs{
     display:flex;
     justify-content:center;
     align-items:center;
-    padding-bottom:50px;
-    height:500px;
-    width:500px;
     border-radius: 5%;
 }
 .contenedor-inputs form{
     display: flex;
     flex-direction: column;
-    padding: 40px 100px;
     align-items: center;
 }
 
@@ -374,7 +293,7 @@ main .contenedor-inputs input[type="text"]:focus,
 main .contenedor-inputs input[type="email"]:focus,
 textarea:focus{
     
-    border: 2px solid rgb(31, 158, 255);
+    border: 2px solid rgb(55, 167, 253);
 
 }
 
@@ -383,7 +302,6 @@ textarea{
     max-height: 150px;
     min-height: 50px;
     max-width: 400px;
-    min-width: 400px;
     height:100px
 }
 
@@ -406,4 +324,186 @@ textarea{
     background-color: white;
     color: rgb(46, 134, 228);
     border: 2px solid rgb(46, 134, 228);
+}
+
+
+/* MEDIAS QUERIES */
+@media(max-width: 1100px)
+{
+    h1{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 950px)
+{
+
+    .card{
+        width: 300px;
+    }
+    .card img{
+        width: 300px;
+        height: 138px;
+    }
+    .card h3{
+        font-size: 1.2rem;
+    }
+    .card h4{
+        font-size: 0.9rem;
+    }
+    .card p{
+        font-size: 0.9rem;
+    }
+    header li{
+        width: 70px;
+    }
+    header a{
+        font-size: 0.9rem;
+    }
+    .box_title p{
+        font-size: 1rem;
+    }
+    header img{
+        height: 70px;
+    }
+    h1{
+        font-size: 1.3rem;
+    }
+}
+@media(max-width: 800px)
+{
+    .box{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        width: 400px;
+    }
+    .card img{
+        width: 400px;
+        height: 185px;
+    }
+    .card h3{
+        font-size: 1.5rem;
+    }
+    .card h4{
+        font-size: 1rem;
+    }
+    .card p{
+        font-size:  1rem;
+    }
+    header li{
+        width: 65px;
+    }
+    header a{
+        font-size: 0.8rem;
+    }
+    .box_title p{
+        font-size: 0.9rem;
+    }
+    header img{
+        height: 60px;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    .contacto{
+        width: 100%;
+    }
+    header{
+        flex-direction: column;
+        padding-left: 0;
+    }
+    header nav{
+        margin: 20px 0px;
+    }
+    header li{
+        width: 90px;
+    }
+    header a{
+        font-size: 1.1rem;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+    header img{
+        height: 80px;
+    }
+    .box_title p{
+        font-size: 1.2rem;
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 600px)
+{
+    .card{
+        width: 300px;
+    }
+    .card img{
+        width: 300px;
+        height: 138px;
+    }
+    .card h3{
+        font-size: 1.2rem;
+    }
+    .card h4{
+        font-size: 0.9rem;
+    }
+    .card p{
+        font-size: 0.9rem;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    header img{
+        height: 70px;
+    }
+    footer h5{
+        font-size: 1rem;
+    }
+    .redes img{
+        height: 30px;
+    }
+    .box_title{
+        margin-left: 10px;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 450px)
+{
+    h2{
+        font-size: 1.2rem;
+    }
+    footer{
+        flex-direction:column;
+    }
+    .redes{
+        margin-top: 10px
+    }
+    footer h5{
+        font-size:0.8rem
+    }
+    main{
+        margin:0;
+    }
+    header, footer{
+        margin: 10px 20px;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    header li{
+        width: 70px;
+    }
+    header a{
+        font-size: 0.9rem;
+    }
+    .entrada{
+        width: 300px;
+    }
+    .box{
+        width:100%;
+    }
 }

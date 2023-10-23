@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rosario Web Development</title>
-    
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -27,13 +26,13 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html" class="active">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="html/about.html" class="noactive">About</a>
+                    <a href="html/about.html" >About</a>
                 </li>
                 <li>
-                    <a href="html/contacto.html" class="noactive">Contact</a>
+                    <a href="#contacto" >Contact</a>
                 </li>
             </ul>
         </nav>
@@ -123,6 +122,23 @@
                 </div>
             </div>
         </div>
+        <section id="contacto" class="contacto">
+            <div class="contenedor-inputs">
+                <form action="https://formsubmit.co/80e4147d296f84a59de233e7c221265b" method="POST">
+                    <h2>Contacto</h2>
+                    <input type="text" name="nombre" class="entrada" placeholder="Name">
+                    <input type="email" name="correo" class="entrada" placeholder="Email">
+                    <textarea placeholder="Message" name="comments" class="entrada"></textarea>
+                    <div class="boxBotones">
+                        <input type="submit" class="boton" value="Send">
+                        <input type="reset" class="boton reset" value="Delete">
+                    </div>
+                    <input type="hidden" name="_next"
+                        value="https://santiangelica.github.io/rosariowebdevelopment/html/formsend.html" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <h5>© 2023 Rosario Web Development</h5>
