@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: rem;
+    background-color: #f7f4f4;
 }
 a{
     text-decoration: none;
@@ -18,7 +19,7 @@ header {
     justify-content: space-between;
     margin: 20px 50px;
     padding-left: 50px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(8, 46, 75);
 }
 
 .headerfirst {
@@ -28,6 +29,7 @@ header {
 
 header p {
     text-align: start;
+    color:rgb(46, 134, 228);
 }
 
 header img {
@@ -41,19 +43,19 @@ header ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid black;
+    border: 2px solid rgb(46, 134, 228);
     border-radius: 15px;
     padding: 3px 0px;
 }
 
 header li:first-child {
-    border-right: 2px solid black;
+    border-right: 2px solid rgb(46, 134, 228);
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
 header li:last-child {
-    border-left: 2px solid black;
+    border-left: 2px solid rgb(46, 134, 228);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -65,7 +67,7 @@ header li:last-child {
     height: 2px;
     bottom:0;
     z-index:1;
-    background-color: black;
+    background-color: rgb(46, 134, 228);
 }
 
 header li {
@@ -83,8 +85,7 @@ header a {
     font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;
-    color: black;
-
+    color: rgb(46, 134, 228);
 }
 
 .noactive {
@@ -98,7 +99,7 @@ header a {
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: black;
+        background-color: rgb(0, 0, 0);
         transform: scaleX(0);
         transform-origin: bottom right;
         transition: transform 0.6s ease-out;
@@ -130,12 +131,16 @@ main {
     margin: 0px 50px;
 }
 
+main h2{
+    color:rgb(46, 134, 228);
+}
+
 .card img {
     width: 400px;
     height: 185px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-bottom: 2px solid black
+    border-bottom: 2px solid rgb(8, 46, 75);
 }
 
 h2 {
@@ -170,10 +175,12 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
 }
 
 .card_contain p {
     margin-bottom: 10px;
+    background-color: #fff;
 }
 
 .card {
@@ -182,13 +189,14 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
     transition: all 400ms ease;
-    margin-bottom: 70px
+    margin-bottom: 70px;
+    background-color: #fff;
 }
 
 .card:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
     transform: translateY(-3%);
 }
 
@@ -204,14 +212,14 @@ button {
     width: 80px;
     border: none;
     color: white;
-    background-color: black;
+    background-color: rgb(46, 134, 228);
 }
 
 button:hover {
     cursor: pointer;
     background-color: white;
-    color: black;
-    border: 2px solid black;
+    color: rgb(46, 134, 228);
+    border: 2px solid rgb(46, 134, 228);
 }
 
 footer {
@@ -219,12 +227,21 @@ footer {
     justify-content: space-between;
     margin: 0px 50px;
     padding: 20px 0px;
-    border-top: 2px solid black
+    border-top: 2px solid rgb(46, 134, 228);
+}
+
+footer h5{
+    color:rgb(46, 134, 228);
 }
 
 .redes img {
     height: 30px;
-    margin-left: 3px
+    margin-left: 3px;
+    color: rgb(46, 134, 228);
+}
+
+.redes a{
+    color:rgb(46, 134, 228);
 }
 
 h5 {
@@ -245,7 +262,7 @@ h5 {
     display: flex;
     flex-direction: row;
     align-items:center;
-    border: 2px solid black;
+    border: 2px solid rgb(46, 134, 228);
 }
 .perfil a{
     height: 24px;
@@ -254,11 +271,11 @@ h5 {
     width:fit-content
 }
 .wp a{
-    border: 2px solid black;
+    border: 2px solid rgb(46, 134, 228);
     display: flex;
     align-items: center;
     width:fit-content;
-    color: black;
+    color: rgb(46, 134, 228);
     height:35px;
     width:200px;
     padding: 0px 5px;
@@ -274,11 +291,11 @@ h5 {
 }
 
 .ig a{
-    border: 2px solid black;
+    border: 2px solid rgb(46, 134, 228);
     display: flex;
     align-items: center;
     width:fit-content;
-    color: black;
+    color: rgb(46, 134, 228);
     height:35px;
     width:200px;
     padding: 0px 5px;
@@ -344,7 +361,7 @@ h5 {
 .entrada, textarea{
     padding: 10px;
     background-color: transparent;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(46, 134, 228);
     border-radius: 5px;
     width: 400px;
     color:black;
@@ -357,7 +374,7 @@ main .contenedor-inputs input[type="text"]:focus,
 main .contenedor-inputs input[type="email"]:focus,
 textarea:focus{
     
-    border: 2px solid rgb(5, 87, 150);
+    border: 2px solid rgb(31, 158, 255);
 
 }
 
@@ -382,11 +399,11 @@ textarea{
     width: 80px;
     border: none;
     color: white;
-    background-color: black;
+    background-color: rgb(46, 134, 228);
 }
 .boton:hover {
     cursor: pointer;
     background-color: white;
-    color: black;
-    border: 2px solid black;
+    color: rgb(46, 134, 228);
+    border: 2px solid rgb(46, 134, 228);
 }
