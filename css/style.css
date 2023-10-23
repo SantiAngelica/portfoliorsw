@@ -88,7 +88,7 @@ header a {
     color: rgb(46, 134, 228);
 }
 
-.noactive {
+header a {
     display: inline-block;
     position: relative;
 
@@ -239,6 +239,10 @@ footer h5{
     height: 40px;
     margin-left: 3px;
     color: rgb(46, 134, 228);
+    transition: all 200ms ease;
+    &:hover{
+        transform: translateY(-5%);
+    }
 }
 
 .redes a{
@@ -264,6 +268,9 @@ h5 {
     align-items:center;
     justify-content:center;
     margin-bottom: 40px;
+}
+form h2{
+    margin-bottom: 10px
 }
 .contenedor-inputs{
     display:flex;
