@@ -237,15 +237,15 @@ h5 {
 .numeros{
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
     width: 700px;
 }
 .perfil{
+    margin-top:20px;
+    border-radius:80px;
     display: flex;
     flex-direction: row;
     align-items:center;
-    border: 2px solid violet;
-    height:150px;
+    border: 2px solid black;
 }
 .perfil a{
     height: 24px;
@@ -253,11 +253,44 @@ h5 {
 .perfil h3{
     width:fit-content
 }
-.ig, .wp{
-    border: 2px solid blue;
+.wp a{
+    border: 2px solid black;
     display: flex;
     align-items: center;
-    width:fit-content
+    width:fit-content;
+    color: black;
+    height:35px;
+    width:200px;
+    padding: 0px 5px;
+    border-radius:15px;
+    &:hover{
+        background: linear-gradient(to top right,  #25D366, #25D366, #075E54);
+    }
+}
+.ig, .wp{
+    width:200px;
+    margin-top:5px;
+    border-radius:15px;
+}
+
+.ig a{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    width:fit-content;
+    color: black;
+    height:35px;
+    width:200px;
+    padding: 0px 5px;
+    border-radius:15px;
+    &:hover{
+        background: linear-gradient(to right, #f9ce34,#f9ce34, #ee2a7b, #6228d7);
+    }
+}
+
+.mateo a{
+    display: flex;
+    justify-content: flex-end
 }
 .perfil p{
     margin-left: 10px;
@@ -280,5 +313,80 @@ h5 {
     height:150px;
     width:150px;
     border:2px solid red;
-    border-radius:50%
+    border-radius:50%;
+    margin: 20px;
+}
+
+/* CONTACTO */
+.contacto{
+    height: 500px;
+    width: 700px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.contenedor-inputs{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:50px;
+    height:500px;
+    width:500px;
+    border-radius: 5%;
+}
+.contenedor-inputs form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 100px;
+    align-items: center;
+}
+
+.entrada, textarea{
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 400px;
+    color:black;
+    font-size: 12px;
+    margin-top: 20px;
+    outline: none;
+}
+
+main .contenedor-inputs input[type="text"]:focus,
+main .contenedor-inputs input[type="email"]:focus,
+textarea:focus{
+    
+    border: 2px solid rgb(5, 87, 150);
+
+}
+
+
+textarea{
+    max-height: 150px;
+    min-height: 50px;
+    max-width: 400px;
+    min-width: 400px;
+    height:100px
+}
+
+.boxBotones{
+    margin-top:20px;
+    width:200px;
+    display:flex;
+    justify-content:space-between
+}
+.boton{
+    border-radius: 20px;
+    height: 30px;
+    width: 80px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+.boton:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
