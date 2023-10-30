@@ -247,7 +247,9 @@ button:hover {
 footer {
     display: flex;
     justify-content: space-between;
-    margin: 0px 50px;
+    margin: 0 50px;
+    margin-bottom: 0;
+    margin-top: auto;
     padding: 20px 0px;
     border-top: 2px solid rgb(46, 134, 228);
 }
@@ -372,6 +374,47 @@ textarea{
 }
 
 
+
+/* FORM SEND */
+.volver{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 5px 8px;
+    border-radius: 12px;
+    border: 2px solid rgb(55, 167, 253);
+    position:absolute;
+    left: 50px;
+    top: 135px;
+}
+.volver:hover > img{
+    background-color:rgb(55, 167, 253);
+}
+.volver:hover > p{
+    background-color:rgb(55, 167, 253);
+}
+.volver:hover{
+    background-color:rgb(55, 167, 253);
+}
+
+.volver img{
+    height: 20px;
+    margin-right: 5px;
+   
+}
+.volver p{
+    color: black;
+}
+.enviado{
+    margin: 32vh 0px 26vh 0;
+    padding: 20px 30px; 
+    border-radius: 20px;
+    border: 2px solid rgb(55, 167, 253);
+}
+
+
+
+
 /* MEDIAS QUERIES */
 @media(max-width: 1100px)
 {
@@ -416,6 +459,9 @@ textarea{
 }
 @media(max-width: 800px)
 {
+    .volver{
+        top:200px
+    }
     .box{
         grid-template-columns: 1fr;
     }
@@ -518,6 +564,9 @@ textarea{
 }
 @media(max-width: 450px)
 {
+    .volver{
+        left: 20px
+    }
     h2{
         font-size: 1.2rem;
     }
@@ -552,3 +601,5 @@ textarea{
         width:100%;
     }
 }
+
+
