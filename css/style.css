@@ -382,19 +382,20 @@ textarea{
     justify-content: center;
     padding: 5px 8px;
     border-radius: 12px;
+    background-color:rgb(55, 167, 253) ;
     border: 2px solid rgb(55, 167, 253);
     position:absolute;
     left: 50px;
     top: 135px;
 }
 .volver:hover > img{
-    background-color:rgb(55, 167, 253);
+    background-color:rgb(255, 255, 255);
 }
 .volver:hover > p{
-    background-color:rgb(55, 167, 253);
+    background-color:rgb(255, 255, 255);
 }
 .volver:hover{
-    background-color:rgb(55, 167, 253);
+    background-color:rgb(255, 255, 255);
 }
 
 .volver img{
