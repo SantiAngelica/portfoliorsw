@@ -477,33 +477,30 @@ main .contenedor-texto p .dest{
     text-align:center;
     margin-bottom: 15px
 }
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%
+    }
 
-.scale-up-center {
-	-webkit-animation: scale-up-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    to {
+        opacity: 1;
+        scale: 100%
+    }
 }
 
- @-webkit-keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-  @keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-  
+
+.card__about{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both;
+
+}
   
 
 
