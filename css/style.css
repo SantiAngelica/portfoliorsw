@@ -446,6 +446,87 @@ main .contenedor-texto p .dest{
 
 
 
+/* ABOUT US */
+.box__about{
+    margin: 50px 100px;
+}
+.card__about{
+    display:flex;
+    margin-top:50px;
+    border: 2px solid rgba(55, 167, 253, 0.726);
+    padding: 30px;
+    border-radius: 30px;
+}
+.comun{
+    margin-left:200px;
+}
+.comun figure{
+    margin-right:80px;
+}
+.reversa{
+    flex-direction:row-reverse;
+    margin-right:200px;
+}
+.reversa figure{
+    margin-left:80px;
+}
+.card__about img{
+    height: 250px;
+}
+.box__card__cont h3{
+    text-align:center;
+    margin-bottom: 15px
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIAS QUERIES */
 @media(max-width: 1100px)
 {
