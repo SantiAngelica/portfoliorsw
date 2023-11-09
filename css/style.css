@@ -116,7 +116,7 @@ header a {
     color: rgb(46, 134, 228);
 }
 
-header a:not(:has(img)) {
+.enlace:not(:has(img)) {
     display: inline-block;
     position: relative;
 
@@ -454,7 +454,8 @@ main .contenedor-texto p .dest{
     display:flex;
     margin-bottom:50px;
     border: 2px solid rgba(55, 167, 253, 0.726);
-    padding: 30px;
+    padding: 20px;
+    align-items: center;
     border-radius: 30px;
 }
 .comun{
@@ -696,6 +697,9 @@ main .contenedor-texto p .dest{
 }
 @media(max-width: 600px)
 {
+    .box__about{
+        margin: 0px 20px;
+    }
     .comun{
         margin-left:0;
     }
@@ -733,6 +737,9 @@ main .contenedor-texto p .dest{
     h1{
         font-size: 1.2rem;
     }
+    header{
+        margin: 20px 20px
+    }
     header img{
         height: 70px;
     }
@@ -751,17 +758,19 @@ main .contenedor-texto p .dest{
 }
 @media(max-width: 450px)
 {
+    .card__about{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card__about img{
+        height: 150px;
+    }
     .volver{
         left: 20px
     }
     h2{
         font-size: 1.2rem;
-    }
-    footer{
-        flex-direction:column;
-    }
-    .redes{
-        margin-top: 10px
     }
     footer h5{
         font-size:0.8rem
