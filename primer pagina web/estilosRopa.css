@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+body{
+    background-image:url(img/Free-Topographic-Map-Seamless-pattern.jpg) ;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-attachment:fixed;
+}
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color: #161f26;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #8d04dd;
+    border-radius: 5px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor .textos{
+    margin-top: -11px;
+}
+
+header {
+    background: url(img/landscape.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 40px;
+}
+
+header .menu {
+    text-align: right;
+}
+
+header .menu a {
+    margin: 20px;
+    color:#8d04dd;
+    font-weight: 500;
+    padding-bottom: 6px;
+    font-size: 1em;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 55px;
+    border-bottom: 2px solid transparent;
+}
+
+header .menu a:hover {
+    border-bottom: 2px solid #8d04dd; }
+
+
+header .contenedor-texto  {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 190px 0; 
+    transition: all 0.3s;
+}
+
+header .contenedor-texto .texto h1 {
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px; 
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+
+header .contenedor-texto .texto h1:hover{
+    border: 4px solid #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+header .contenedor-texto .texto h1 span, h3 span {
+    color: #8d04dd;
+
+}
+
+header .contenedor-texto .texto h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+
+}
+
+.main .contenedor-prendas{
+    width: 100%;
+}
+
+.main .contenedor-prendas .prendas{
+    width: 70%;
+    margin: auto;
+}
+
+.main .contenedor-prendas .prendas .uno{
+    display: flex;
+    max-width: 650px;
+}
+
+.main .contenedor-prendas .prendas .uno .img1b{
+    margin-left: -700px;
+    opacity: 0%;
+    transition: all 0.6s;
+}
+
+.main .contenedor-prendas .prendas .dos{
+    display: flex;
+    max-width: 650px;
+}
+
+.main .contenedor-prendas .prendas .dos .img2b{
+    margin-left: -700px;
+    opacity: 0%;
+    transition: all 0.6s;
+}
+
+.main .contenedor-prendas .prendas .tres{
+    display: flex;
+    max-width: 650px;
+}
+
+.main .contenedor-prendas .prendas .tres .img3b{
+    margin-left: -700px;
+    opacity: 0%;
+    transition: all 0.6s;
+}
+
+
+.main .contenedor-prendas .prendas img{
+    margin-bottom: 150px;
+    width: 700px;
+    height: 700px;
+    max-width: 700px;
+    max-height: 700px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+
+}
+
+
+
+.main .contenedor-prendas .prendas img:hover{
+    border:3px solid #8d04dd;
+}
+
+.main .contenedor-prendas .prendas .img1b:hover{
+    border:3px solid #8d04dd;
+    opacity: 100%;
+}
+
+.main .contenedor-prendas .prendas .img2b:hover{
+    border:3px solid #8d04dd;
+    opacity: 100%;
+}
+
+.main .contenedor-prendas .prendas .img3b:hover{
+    border:3px solid #8d04dd;
+    opacity: 100%;
+}
+
+footer .redes{
+    background-color: #161f26;
+    padding: 60px 0;
+}
+
+footer .redes .contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes .contenedor a{
+    text-align: center;
+    color: #fff;
+    margin: 0 20px;
+    width: 100px;
+    display: block;
+    padding: 20px 20px;
+    font-size: 30px;
+}
+
+footer .redes .twitter:hover{background-color: #1da1f2;}
+footer .redes .youtube:hover{background-color: #ff0000;}
+footer .redes .instagram:hover{background-color: #5851db;}
+footer .redes .wsp:hover{background-color: #25d366;}
+footer .redes .github:hover{background-color: #9c9898;}
+
+/* ----- ----- MEDIA-QUERIES ----- -----*/
+    @media screen and (max-width:900px) {
+
+        .main .contenedor-prendas .prendas img{
+            margin-bottom: 150px;
+            width: 500px;
+            height: 500px;
+            max-width: 500px;
+            max-height: 500px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s;
+        }
+
+        .main .contenedor-prendas .prendas .dos .img1b{
+            display: none;
+
+        }
+
+        .main .contenedor-prendas .prendas .dos .img2b{
+            display: none;
+
+        }
+
+        .main .contenedor-prendas .prendas .dos .img3b{
+            display: none;
+
+        }
+
+
+        
+
+    }
+
+    @media screen and (max-width:1400px){
+        header .contenedor .imagen .menu .textos {
+            margin: auto;
+            text-align: center;
+        }
+    }
+    
+    
+    @media screen and (max-width:800px) {
+        
+        ::-webkit-scrollbar{
+            display: none;
+        }
+    
+        header .contenedor .imagen .menu .textos a {
+            margin: auto;
+            text-align: center;
+            padding-right:20px ;
+            }
+    }
+
+    @media screen and (max-width:670px) {
+        .main .contenedor-prendas .prendas img{
+            margin-bottom: 50px;
+            width: 300px;
+            height: 300px;
+            max-width: 300px;
+            max-height: 300px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s;
+        }
+
+    }

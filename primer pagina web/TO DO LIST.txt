@@ -1,0 +1,4 @@
+-arreglar las transisiones y el header que se pasa abajo le faltan las mediaqueries de el index
+-terminar la pagina
+-cambiar medidas de la ropa a % no a px
+-hacer que la pagina recarge enviandola asi misma mediante el boton del logo principal

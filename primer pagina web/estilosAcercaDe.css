@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+body{
+    background-image:url(img/Free-Topographic-Map-Seamless-pattern.jpg) ;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-attachment:fixed;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color: #161f26;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #8d04dd;
+    border-radius: 5px;
+}
+
+header {
+    background: url(img/landscape.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    position:relative;
+    overflow: hidden;
+}
+
+header .contenedor{
+    width: 100%;
+    height: 100%;
+}
+
+header .contenedor .imagen {
+    width: 100%;
+    height: 100%;
+}
+
+header:before,header:after{
+    content: "";
+    position:absolute;
+    width: calc(100% - 30px);
+    height: 4px;
+    background: #8d04dd;
+    transition:all .5s;
+}
+
+header:before{
+    left:-100%;
+    top: 10px;
+}
+
+header:after{
+    left:100%;
+    margin-bottom: -580px;
+}
+
+header:hover:after, header:hover:before{
+    left: 15px;
+}
+
+header .menu {
+    height:95%;
+    transition: all .5s;
+}
+
+header .menu .textos{
+    margin-top: 22px;
+    margin-left: 1051px;
+}
+
+ /*header .menu:hover  {
+    margin-left: 1050px;
+}  */
+
+header .menu a {
+    margin: 20px;
+    color:#8d04dd;
+    font-weight: 500;
+    padding-bottom: 6px;
+    font-size: 1em;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+header .menu a:hover {
+    border-bottom: 2px solid #8d04dd; }
+
+    header .contenedor-texto  {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 190px 0; 
+        margin-top: -340px;
+    }
+
+    /* ESTO ES PARA HACER LO DEL TEXTO DEL MEDIO Q APAREZCA
+    
+    header .contenedor-texto .texto{
+        text-align: center;
+        position: absolute;
+        transition: all .3s;
+        transform: scale(1.5);
+        opacity: 0;
+    }
+
+    header .contenedor-texto .texto:hover{
+        transform: scale(1);
+        opacity: 1;
+    } */
+    
+    
+    header .contenedor-texto .texto h1 {
+        border: 4px solid rgba(255, 255, 255, 0.5);
+        border-radius: 3px;
+        display: inline-block;
+        text-align: center;
+        padding: 20px 60px; 
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    
+    
+    
+    header .contenedor-texto .texto h1:hover{
+        border: 4px solid #fff;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    
+    
+    header .contenedor-texto .texto h1 span, h3 span {
+        color: #8d04dd;
+    
+    }
+    
+    header .contenedor-texto .texto h3 {
+        margin: 0;
+        text-align: center;
+    }
+    
+.main {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 110px;
+    position: relative;
+}
+
+.main .contenedor{
+    padding: 15px;
+    margin-top: -20px;
+    background-color: #161f26;
+    border: 2px solid #8d04dd;
+    border-radius: 2px;
+    color: #a4a4a4;
+}
+
+.main .contenedor h3 {
+    color: #8d04dd;
+    margin-bottom: 2px;
+    
+}
+
+.main .contenedor p{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #a4a4a4;
+}
+
+
+footer .redes{
+    background-color: #161f26;
+    padding: 60px 0;
+}
+
+footer .redes .contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes .contenedor a{
+    text-align: center;
+    color: #fff;
+    margin: 0 20px;
+    width: 100px;
+    display: block;
+    padding: 20px 20px;
+    font-size: 30px;
+}
+
+footer .redes .twitter:hover{background-color: #1da1f2;}
+footer .redes .youtube:hover{background-color: #ff0000;}
+footer .redes .instagram:hover{background-color: #5851db;}
+footer .redes .wsp:hover{background-color: #25d366;}
+footer .redes .github:hover{background-color: #9c9898;}
+
+@media screen and (max-width:1400px){
+    header .contenedor .imagen .menu .textos {
+        margin: auto;
+        text-align: center;
+        }
+}
+
+
+@media screen and (max-width:800px) {
+    
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    header .contenedor .imagen .menu .textos {
+        margin: auto;
+        text-align: center;
+        }
+}
